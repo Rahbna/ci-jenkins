@@ -14,7 +14,7 @@ pipeline{
        stage('Fetch code'){
            steps{
                git branch: 'jpac',
-               url: 'https://github.com/asessofia/ci-jenkins/'
+               url: 'https://github.com/Rahbna/ci-jenkins.git'
            }
        }
       
