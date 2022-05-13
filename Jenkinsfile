@@ -1,7 +1,7 @@
 pipeline{
     agent any
    /* tools{
-        maven "maven3"
+        maven “maven3”
     }
     environment {
         NEXUS_VERSION =
@@ -10,16 +10,20 @@ pipeline{
         NEXUS_CREDENTIAL_ID
     }
    */
-    stages{
-       stage('Fetch code'){
+   stages{
+       stage(‘Fetch code’){
            steps{
-               git branch: 'jpac',
-               url: 'https://github.com/Rahbna/ci-jenkins.git'
+               git branch: ‘jpac’,
+               url: ‘https://github.com/patoss16/ci-jenkins.git’
            }
        }
-      
    }
 }
+
+
+
+
+
 
 
 
