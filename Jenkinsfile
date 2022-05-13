@@ -1,7 +1,7 @@
 pipeline{
     agent any
    /* tools{
-        maven “maven3”
+        maven "maven3"
     }
     environment {
         NEXUS_VERSION =
@@ -11,10 +11,10 @@ pipeline{
     }
    */
    stages{
-       stage(‘Fetch code’){
+       stage('Fetch code'){
            steps{
-               git branch: ‘jpac’,
-               url: ‘https://github.com/patoss16/ci-jenkins.git’
+               git branch: 'jpac',
+               url: 'https://github.com/Rahbna/ci-jenkins.git'
            }
        }
    }
